@@ -1,46 +1,43 @@
 # Site
-name: 'Pintereso'
-description: 'Pintereso is a free Jekyll theme for awesome people like you, Pinterest like.'
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
-baseurl: '/template-pintereso-bootstrap-jekyll'
-avatar: 'assets/images/sal.jpg'
+name: 'Abi Santi'
+description: ''
+logo: 'assets/images/abisanti-transparent.png'
+favicon: 'assets/images/abisanti-transparent.png'
+baseurl: '/home'
+avatar: 'assets/images/abisanti-transparent.png'
 disqus: 'demowebsite'
 email: 'wowthemesnet@gmail.com'
 
-include: ["_pages"]
+include: ['_pages']
 permalink: /:title/
 
 # Plugins
-plugins: 
+plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
- 
+
 # Defaults
 defaults:
-
   # all posts
   - scope:
-      path: "_posts"
+      path: '_posts'
     values:
       layout: post
-      
+
   # all pages
   - scope:
-      path: "_pages"
+      path: '_pages'
     values:
       layout: page
-      
-      
+
 # Syntax
 markdown: kramdown
 highlighter: rouge
 
 # Pagination
 paginate: 20
-
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
 exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
